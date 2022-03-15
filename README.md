@@ -1,6 +1,4 @@
 # design_patterns
-Design patterns example cases
-
 
 Patterns to cover:
 1. Strategy
