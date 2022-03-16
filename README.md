@@ -1,7 +1,7 @@
 # design_patterns
 
 Patterns to cover:
-1. Strategy
+1. Strategy (Covered)
 2. Observer
 3. Decorator
 4. Factory
