@@ -1,4 +1,4 @@
-from Subject import Subject
+from observer.subjects.Subject import Subject
 
 
 class WeatherData(Subject):
@@ -27,5 +27,5 @@ class WeatherData(Subject):
         self.temperature = temperature
         self.humidity = humidity
         self.pressure = pressure
-        self.notify_observers()
+        self.measurements_changed()
 

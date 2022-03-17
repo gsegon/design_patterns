@@ -1,9 +1,9 @@
-from DisplayElement import DisplayElement
-from Observer import Observer
-from WeatherData import WeatherData
+from observer.observers.DisplayElement import DisplayElement
+from observer.observers.Observer import Observer
+from observer.subjects.WeatherData import WeatherData
 
 
-class CurrentConditions(Observer, DisplayElement):
+class CurrentConditionsDisplay(Observer, DisplayElement):
 
     def __init__(self, weather_data: WeatherData):
         self.temperature = None
