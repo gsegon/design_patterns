@@ -14,7 +14,7 @@ class ForecastDisplay(Observer, DisplayElement):
 
     def update(self, temperature, humidity, pressure):
         self.last_pressure = self.pressure
-        self.last_pressure = pressure
+        self.pressure = pressure
 
         self.display()
 
