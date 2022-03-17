@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Subject(ABC):
+class Observable(ABC):
 
     @abstractmethod
     def register_observer(self, o):

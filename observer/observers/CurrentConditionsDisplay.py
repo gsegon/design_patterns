@@ -1,6 +1,6 @@
 from observer.observers.DisplayElement import DisplayElement
 from observer.observers.Observer import Observer
-from observer.subjects.WeatherData import WeatherData
+from observer.observables.WeatherData import WeatherData
 
 
 class CurrentConditionsDisplay(Observer, DisplayElement):

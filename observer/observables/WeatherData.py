@@ -1,7 +1,7 @@
-from observer.subjects.Subject import Subject
+from observer.observables.Observable import Observable
 
 
-class WeatherData(Subject):
+class WeatherData(Observable):
 
     def __init__(self):
         self.temperature = None
