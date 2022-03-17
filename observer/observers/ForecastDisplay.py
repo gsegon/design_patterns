@@ -12,9 +12,9 @@ class ForecastDisplay(Observer, DisplayElement):
         self.weather_data = weather_data
         self.weather_data.register_observer(self)
 
-    def update(self, temperature, humidity, pressure):
+    def update(self):
         self.last_pressure = self.pressure
-        self.pressure = pressure
+        self.pressure = self.weather_data.get_pressure()
 
         self.display()
 

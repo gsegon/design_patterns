@@ -15,7 +15,9 @@ class StatisticsDisplay(Observer, DisplayElement):
         self.weather_data = weather_data
         self.weather_data.register_observer(self)
 
-    def update(self, temperature, humidity, pressure):
+    def update(self):
+
+        temperature = self.weather_data.get_temperature()
 
         if self.count == 0:
             self.mean_temperature = temperature
