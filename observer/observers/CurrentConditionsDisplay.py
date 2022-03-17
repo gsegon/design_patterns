@@ -17,4 +17,4 @@ class CurrentConditionsDisplay(Observer, DisplayElement):
         self.display()
 
     def display(self):
-        print('Current conditions: ', self.temperature, 'degC and ', self.humidity, ' humidity.')
+        print('Current conditions: ', self.temperature, 'degF and ', self.humidity, ' humidity.')

@@ -19,7 +19,7 @@ class ForecastDisplay(Observer, DisplayElement):
         self.display()
 
     def display(self):
-        print('Forecast:')
+        print('Forecast')
 
         if self.pressure > self.last_pressure:
             print('Weather will improve!')
