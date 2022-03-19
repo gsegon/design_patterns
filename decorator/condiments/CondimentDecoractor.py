@@ -1,5 +1,5 @@
-from abc import ABC, abstractmethod
-from Beverage import Beverage
+from abc import abstractmethod
+from decorator.beverages.Beverage import Beverage
 
 
 class CondimentDecorator(Beverage):

@@ -1,4 +1,4 @@
-from CondimentDecoractor import CondimentDecorator
+from decorator.condiments.CondimentDecoractor import CondimentDecorator
 
 
 class Whip(CondimentDecorator):

@@ -1,10 +1,10 @@
-from Espresso import Espresso
-from DarkRoast import DarkRoast
-from HouseBlend import HouseBlend
+from decorator.beverages.Espresso import Espresso
+from decorator.beverages.DarkRoast import DarkRoast
+from decorator.beverages.HouseBlend import HouseBlend
 
-from Mocha import Mocha
-from Soy import Soy
-from Whip import Whip
+from decorator.condiments.Mocha import Mocha
+from decorator.condiments.Soy import Soy
+from decorator.condiments.Whip import Whip
 
 if __name__ == '__main__':
 

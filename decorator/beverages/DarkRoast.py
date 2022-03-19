@@ -1,4 +1,4 @@
-from Beverage import Beverage
+from decorator.beverages.Beverage import Beverage
 
 
 class DarkRoast(Beverage):
