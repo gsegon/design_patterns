@@ -3,7 +3,7 @@
 Patterns to cover:
 1. Strategy (Covered)
 2. Observer (Covered)
-3. Decorator
+3. Decorator (Covered)
 4. Factory
 5. Singleton
 6. Command
