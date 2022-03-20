@@ -8,5 +8,5 @@ class TestNYStylePizzaStore(TestCase):
         self.store = NYStylePizzaStore()
 
     def test_order_pizza(self):
-        self.store.order_pizza('pepperoni')
+        self.store.order_pizza('cheese')
 

@@ -3,14 +3,26 @@ from abc import ABC
 
 class Pizza(ABC):
 
+    def __init__(self):
+        self.name = ''
+        self.dough = ''
+        self.sauce = ''
+        self.toppings = []
+
     def prepare(self):
-        print('Preparing ', self.__class__.__name__, '...')
+        print('Preparing ', self.name)
+        print('Tossing dough...')
+        print('Adding sauce...')
+        print('Adding toppings: ', [topping for topping in self.toppings])
 
     def bake(self):
-        print('Baking ', self.__class__.__name__, '...')
+        print('Bake for 25 minutes at 350')
 
     def cut(self):
-        print('Cutting ', self.__class__.__name__, '...')
+        print('Cutting the pizza into diagonal slices')
 
     def box(self):
-        print('Boxing ', self.__class__.__name__, '...')
+        print('Place pizza in official PizzaStore box')
+
+    def get_name(self):
+        return self.name
