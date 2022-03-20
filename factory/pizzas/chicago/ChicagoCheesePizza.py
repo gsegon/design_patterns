@@ -2,6 +2,7 @@ from factory.pizzas.Pizza import Pizza
 
 
 class ChicagoCheesePizza(Pizza):
+    """ A concrete product """
 
     def __init__(self):
         super(ChicagoCheesePizza, self).__init__()

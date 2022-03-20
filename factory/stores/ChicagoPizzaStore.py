@@ -7,8 +7,10 @@ from factory.pizzas.chicago.ChicagoVeggiePizza import ChicagoVeggiePizza
 
 
 class ChicagoPizzaStore(PizzaStore):
+    """ Classes that produce products are called concrete creators """
 
     def create_pizza(self, pizza_type: str) -> Pizza:
+        """ This is our factory method implemented """
 
         pizza = None
 

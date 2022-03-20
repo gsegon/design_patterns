@@ -2,6 +2,7 @@ from abc import ABC
 
 
 class Pizza(ABC):
+    """ Factories produce products and in our example the product is Pizza """
 
     def __init__(self):
         self.name = ''
