@@ -1,5 +1,5 @@
-from stores.NYStylePizzaStore import NYStylePizzaStore
-from stores.ChicagoPizzaStore import ChicagoPizzaStore
+from factory.factory_method.stores.NYStylePizzaStore import NYStylePizzaStore
+from factory.factory_method.stores.ChicagoPizzaStore import ChicagoPizzaStore
 
 
 if __name__ == '__main__':

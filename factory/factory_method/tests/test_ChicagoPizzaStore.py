@@ -1,5 +1,5 @@
 from unittest import TestCase
-from factory.stores.ChicagoPizzaStore import ChicagoPizzaStore
+from factory.factory_method.stores.ChicagoPizzaStore import ChicagoPizzaStore
 
 
 class TestChicagoPizzaStore(TestCase):

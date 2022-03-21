@@ -1,9 +1,9 @@
-from factory.stores.PizzaStore import PizzaStore
-from factory.pizzas.Pizza import Pizza
-from factory.pizzas.california.CaliforniaCheesePizza import CaliforniaCheesePizza
-from factory.pizzas.california.CaliforniaPepperoniPizza import CaliforniaPepperoniPizza
-from factory.pizzas.california.CaliforniaClamPizza import CaliforniaClamPizza
-from factory.pizzas.california.CaliforniaVeggiePizza import CaliforniaVeggiePizza
+from factory.factory_method.stores.PizzaStore import PizzaStore
+from factory.factory_method.pizzas import Pizza
+from factory.factory_method.pizzas.california.CaliforniaCheesePizza import CaliforniaCheesePizza
+from factory.factory_method.pizzas.california.CaliforniaPepperoniPizza import CaliforniaPepperoniPizza
+from factory.factory_method.pizzas.california.CaliforniaClamPizza import CaliforniaClamPizza
+from factory.factory_method.pizzas.california.CaliforniaVeggiePizza import CaliforniaVeggiePizza
 
 
 class CaliforniaPizzaStore(PizzaStore):

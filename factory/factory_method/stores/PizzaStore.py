@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from factory.pizzas.Pizza import Pizza
+from factory.factory_method.pizzas.Pizza import Pizza
 
 
 # This is our abstract creator class. It defines an abstract factory

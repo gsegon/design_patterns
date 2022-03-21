@@ -1,9 +1,9 @@
-from factory.stores.PizzaStore import PizzaStore
-from factory.pizzas.Pizza import Pizza
-from factory.pizzas.new_york.NYStyleCheesePizza import NYStyleCheesePizza
-from factory.pizzas.new_york.NYStylePepperoniPizza import NYStylePepperoniPizza
-from factory.pizzas.new_york.NYStyleClamPizza import NYStyleClamPizza
-from factory.pizzas.new_york.NYStyleVeggiePizza import NYStyleVeggiePizza
+from factory.factory_method.stores.PizzaStore import PizzaStore
+from factory.factory_method.pizzas.Pizza import Pizza
+from factory.factory_method.pizzas.new_york.NYStyleCheesePizza import NYStyleCheesePizza
+from factory.factory_method.pizzas.new_york.NYStylePepperoniPizza import NYStylePepperoniPizza
+from factory.factory_method.pizzas.new_york.NYStyleClamPizza import NYStyleClamPizza
+from factory.factory_method.pizzas.new_york.NYStyleVeggiePizza import NYStyleVeggiePizza
 
 
 class NYStylePizzaStore(PizzaStore):
