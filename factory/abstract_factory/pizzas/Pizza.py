@@ -16,6 +16,7 @@ class Pizza(ABC):
 
     @abstractmethod
     def prepare(self):
+        """ Every concrete Pizza has to implement prepare """
         pass
 
     def bake(self):

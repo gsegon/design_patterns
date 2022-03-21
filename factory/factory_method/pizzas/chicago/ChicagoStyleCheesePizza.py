@@ -1,11 +1,11 @@
 from factory.factory_method.pizzas.Pizza import Pizza
 
 
-class ChicagoCheesePizza(Pizza):
+class ChicagoStyleCheesePizza(Pizza):
     """ A concrete product """
 
     def __init__(self):
-        super(ChicagoCheesePizza, self).__init__()
+        super(ChicagoStyleCheesePizza, self).__init__()
 
         self.name = 'Chicago Style Deep Dish Cheese Pizza'
         self.dough = 'Extra Thick Crust Dough'

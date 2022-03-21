@@ -10,6 +10,7 @@ from factory.abstract_factory.ingredients.pepperoni import Pepperoni
 
 
 class PizzaIngredientFactory(ABC):
+    """ This is an abstract factory """
 
     @abstractmethod
     def create_dough(self) -> Dough:

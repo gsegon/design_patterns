@@ -21,6 +21,7 @@ from factory.abstract_factory.ingredients.veggies.RedPepperVeggie import RedPepp
 
 
 class NYPizzaIngredientFactory(PizzaIngredientFactory):
+    """ This is a concrete factory implementing the abstract factory """
 
     def create_dough(self) -> Dough:
         return ThinCrustDough()

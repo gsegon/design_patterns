@@ -10,6 +10,9 @@ class CheesePizza(Pizza):
         self.ingredient_factory = ingredient_factory
 
     def prepare(self):
+        """ CheesePizza is the client code of the abstract factory. It calls methods specified in the abstract factory
+        PizzaIngredientFactory but of the concrete implementation of IngredientFactory constructed in the store """
+
         print('Preparing ', self.name)
         self.dough = self.ingredient_factory.create_dough()
         self.sauce = self.ingredient_factory.create_sauce()

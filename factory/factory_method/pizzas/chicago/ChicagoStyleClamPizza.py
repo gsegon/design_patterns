@@ -1,7 +1,7 @@
 from factory.factory_method.pizzas.Pizza import Pizza
 
 
-class ChicagoVeggiePizza(Pizza):
+class ChicagoStyleClamPizza(Pizza):
     """ A concrete product """
 
     pass
