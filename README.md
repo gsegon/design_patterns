@@ -5,7 +5,7 @@ Patterns to cover:
 2. Observer (Covered)
 3. Decorator (Covered)
 4. Factory (Covered)
-5. Singleton
+5. Singleton (Covered, partially)
 6. Command
 7. Adapter and Facade
 8. Template Method
