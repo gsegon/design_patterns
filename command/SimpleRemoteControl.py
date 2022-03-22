@@ -1,0 +1,14 @@
+from command.commands.Command import Command
+
+
+class SimpleRemoteControl:
+
+    def __init__(self):
+        self.slot = None
+
+    def set_command(self, command: Command):
+        self.slot = command
+
+    def button_was_pressed(self):
+        self.slot.execute()
+
