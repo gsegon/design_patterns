@@ -12,3 +12,7 @@ class CeilingFanOffCommand(Command):
     def execute(self):
         """ Execute the command """
         self.ceiling_fan.off()
+
+    def undo(self):
+        """ Undo the command """
+        self.ceiling_fan.low()

@@ -14,3 +14,7 @@ class StereoWithCDCommand(Command):
         self.stereo.on()
         self.stereo.set_cd()
         self.stereo.set_volume(11)
+
+    def undo(self):
+        """ Undo the command """
+        self.stereo.off()

@@ -12,3 +12,7 @@ class LightOnCommand(Command):
     def execute(self):
         """ Execute the LightOnCommand """
         self.light.on()
+
+    def undo(self):
+        """ Undo the LightOnCommand """
+        self.light.off()

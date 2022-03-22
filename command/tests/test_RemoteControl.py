@@ -85,3 +85,15 @@ class TestRemoteControl(TestCase):
         """ Test slot 3 """
         self.remote.on_button_was_pressed(3)
         self.remote.off_button_was_pressed(3)
+
+    def test_undo(self):
+        """ Test undo """
+        self.remote.on_button_was_pressed(0)
+        self.remote.off_button_was_pressed(0)
+        print(self.remote)
+        self.remote.undo_button_was_pressed()
+        self.remote.off_button_was_pressed(0)
+        self.remote.on_button_was_pressed(0)
+        print(self.remote)
+        self.remote.undo_button_was_pressed()
+

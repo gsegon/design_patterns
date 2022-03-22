@@ -8,3 +8,6 @@ class NoCommand(Command):
 
     def execute(self):
         print('Do nothing.')
+
+    def undo(self):
+        print('Do nothing')

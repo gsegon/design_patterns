@@ -10,10 +10,12 @@ class Stereo:
 
     def on(self):
         """ Turns the stereo ON """
+        self.volume = 20
         print('Stereo ON')
 
     def off(self):
         """ Turns the stereo OFF"""
+        self.volume = 0
         print('Stereo OFF')
 
     def set_cd(self):

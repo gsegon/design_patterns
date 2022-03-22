@@ -14,3 +14,8 @@ class GarageDoorClose(Command):
         self.garage_door.light_off()
         self.garage_door.down()
 
+    def undo(self):
+        """ Undo the command """
+        self.garage_door.up()
+        self.garage_door.light_on()
+

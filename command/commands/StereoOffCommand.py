@@ -12,3 +12,7 @@ class StereoOffCommand(Command):
     def execute(self):
         """ Execute the command """
         self.stereo.off()
+
+    def undo(self):
+        """ Undo the command """
+        self.stereo.on()
