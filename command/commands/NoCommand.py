@@ -2,12 +2,12 @@ from command.commands.Command import Command
 
 
 class NoCommand(Command):
-
-    def __init__(self):
-        pass
+    """ Implements a NoCommand Command. Un-assigned slots are assigned a NoCommand rather then None """
 
     def execute(self):
+        """ Executes the command - Does nothing """
         print('Do nothing.')
 
     def undo(self):
+        """ Undoes the command - Does nothing """
         print('Do nothing')

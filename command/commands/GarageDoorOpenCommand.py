@@ -3,7 +3,7 @@ from command.vendors.GarageDoor import GarageDoor
 
 
 class GarageDoorOpen(Command):
-    """ GarageDoorOpen command"""
+    """ GarageDoorOpen command """
 
     def __init__(self, garage_door: GarageDoor):
         """ Initialize with GarageDoor object """
