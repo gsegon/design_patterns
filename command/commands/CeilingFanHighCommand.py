@@ -2,8 +2,8 @@ from command.commands.Command import Command
 from command.vendors.CeilingFan import CeilingFan
 
 
-class CeilingFanOnCommand(Command):
-    """ Ceiling Fan On command """
+class CeilingFanHighCommand(Command):
+    """ Ceiling Fan High command """
 
     def __init__(self, ceiling_fan: CeilingFan):
         """Initialize with ceiling fan object"""
@@ -13,7 +13,7 @@ class CeilingFanOnCommand(Command):
     def execute(self):
         """ Execute the command """
         self.prev_speed = self.ceiling_fan.get_speed()
-        self.ceiling_fan.low()
+        self.ceiling_fan.high()
 
     def undo(self):
         """ Undo the command """
@@ -25,3 +25,4 @@ class CeilingFanOnCommand(Command):
             self.ceiling_fan.low()
         elif self.prev_speed == CeilingFan.OFF:
             self.ceiling_fan.off()
+

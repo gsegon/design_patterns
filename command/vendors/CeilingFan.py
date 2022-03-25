@@ -3,29 +3,36 @@
 class CeilingFan:
     """ Ceiling fan vendor class """
 
+    ''' Speed settings '''
+    HIGH = 3
+    MEDIUM = 2
+    LOW = 1
+    OFF = 0
+
     def __init__(self, location):
         """ Initialize the CeilingFan """
+
         self.location = location
-        self.speed = 0.0
+        self.speed = self.OFF
 
     def high(self):
         """ Set speed to high """
-        self.speed = 100
+        self.speed = self.HIGH
         print(self.location, ' Ceiling Fan speed set to HIGH')
 
     def medium(self):
         """ Set speed to medium """
-        self.speed = 50
+        self.speed = self.MEDIUM
         print(self.location, ' Ceiling Fan speed set to MEDIUM')
 
     def low(self):
-        self.speed = 20
+        self.speed = self.LOW
         """ Set speed to low """
         print(self.location, ' Ceiling Fan speed set to LOW')
 
     def off(self):
         """ The the ceiling fan OFF """
-        self.speed = 0
+        self.speed = self.OFF
         print(self.location, ' Ceiling Fan is OFF')
 
     def get_speed(self):
