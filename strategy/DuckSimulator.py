@@ -1,10 +1,10 @@
-from clients.RubberDuck import RubberDuck
-from clients.MallardDuck import MallardDuck
-from clients.DecoyDuck import DecoyDuck
-from clients.RedheadDuck import RedheadDuck
+from strategy.clients.RubberDuck import RubberDuck
+from strategy.clients.MallardDuck import MallardDuck
+from strategy.clients.DecoyDuck import DecoyDuck
+from strategy.clients.RedheadDuck import RedheadDuck
 
-from behaviours.FlyNoWay import FlyNoWay
-from behaviours.FlyRocket import FlyRocket
+from strategy.behaviours.FlyNoWay import FlyNoWay
+from strategy.behaviours.FlyRocket import FlyRocket
 
 if __name__ == '__main__':
 
