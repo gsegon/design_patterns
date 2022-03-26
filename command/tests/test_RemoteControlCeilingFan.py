@@ -45,8 +45,6 @@ class TestRemoteControlCeilingFan(TestCase):
 
         self.remote.on_button_was_pressed(0)
         self.remote.on_button_was_pressed(1)
-        self.remote.on_button_was_pressed(2)
-        self.remote.on_button_was_pressed(3)
 
         self.assertTrue(True)
 
@@ -55,8 +53,6 @@ class TestRemoteControlCeilingFan(TestCase):
 
         self.remote.off_button_was_pressed(0)
         self.remote.off_button_was_pressed(1)
-        self.remote.off_button_was_pressed(2)
-        self.remote.off_button_was_pressed(3)
 
         self.assertTrue(True)
 
@@ -69,16 +65,6 @@ class TestRemoteControlCeilingFan(TestCase):
         """ Test slot 1 """
         self.remote.on_button_was_pressed(1)
         self.remote.off_button_was_pressed(1)
-
-    def test_slot_2(self):
-        """ Test slot 2 """
-        self.remote.on_button_was_pressed(2)
-        self.remote.off_button_was_pressed(2)
-
-    def test_slot_3(self):
-        """ Test slot 3 """
-        self.remote.on_button_was_pressed(3)
-        self.remote.off_button_was_pressed(3)
 
     def test_undo(self):
         """ Test undo """

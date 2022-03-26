@@ -1,6 +1,7 @@
 
 
 class GarageDoor:
+    """ GarageDoor vendor class """
 
     def up(self):
         """ Garage door goes up"""
