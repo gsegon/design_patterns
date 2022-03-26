@@ -75,6 +75,18 @@ class TestPartyMode(TestCase):
         self.remote.on_button_was_pressed(0)
         self.remote.off_button_was_pressed(0)
 
+    def test_undo(self):
+        """ Test slot 0 """
+        self.remote.on_button_was_pressed(0)
+        print('')
+        self.remote.undo_button_was_pressed()
+        print('')
+        self.remote.on_button_was_pressed(0)
+        print('')
+        self.remote.on_button_was_pressed(0)
+        print('')
+        self.remote.undo_button_was_pressed()
+
 
 
 

@@ -8,6 +8,7 @@ from command.commands.CeilingFanHighCommand import CeilingFanHighCommand
 
 
 class TestRemoteControlCeilingFan(TestCase):
+    """ Test Remote Control Ceiling Fan """
 
     def setUp(self) -> None:
         """ SetUp the test class"""

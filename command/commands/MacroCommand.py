@@ -14,4 +14,6 @@ class MacroCommand(Command):
             command.execute()
 
     def undo(self):
-        print('Undo not implemented for Macro Commands. Do nothing...')
+        """ Undo do macro command """
+        for command in self.commands:
+            command.undo()
