@@ -6,7 +6,7 @@ Patterns to cover:
 3. Decorator (Covered)
 4. Factory (Covered)
 5. Singleton (Covered, partially)
-6. Command
+6. Command (Covered)
 7. Adapter and Facade
 8. Template Method
 9. Iterator and Composite
