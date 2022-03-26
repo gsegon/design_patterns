@@ -15,5 +15,5 @@ class MacroCommand(Command):
 
     def undo(self):
         """ Undo do macro command """
-        for command in self.commands:
+        for command in self.commands[::-1]:
             command.undo()
