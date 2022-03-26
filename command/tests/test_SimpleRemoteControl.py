@@ -1,5 +1,5 @@
 from unittest import TestCase
-from command.SimpleRemoteControl import SimpleRemoteControl
+from command.controllers.SimpleRemoteControl import SimpleRemoteControl
 
 from command.vendors.Light import Light
 from command.commands.LightOnCommand import LightOnCommand

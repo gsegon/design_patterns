@@ -1,16 +1,8 @@
 from unittest import TestCase
-from command.RemoteControl import RemoteControl
-from command.vendors.Light import Light
-from command.vendors.Stereo import Stereo
+from command.controllers.RemoteControl import RemoteControl
 from command.vendors.CeilingFan import CeilingFan
-from command.commands.LightOnCommand import LightOnCommand
-from command.commands.LightOffCommand import LightOffCommand
-from command.commands.StereoWithCDCommand import StereoWithCDCommand
-from command.commands.StereoOffCommand import StereoOffCommand
 from command.commands.CeilingFanOnCommand import CeilingFanOnCommand
 from command.commands.CeilingFanOffCommand import CeilingFanOffCommand
-from command.commands.GarageDoorOpenCommand import GarageDoorOpen
-from command.commands.GarageDoorCloseCommand import GarageDoorClose
 from command.commands.CeilingFanMediumCommand import CeilingFanMediumCommand
 from command.commands.CeilingFanHighCommand import CeilingFanHighCommand
 
