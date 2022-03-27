@@ -1,8 +1,8 @@
 import unittest
-from Turkey import Turkey
-from MallardDuck import MallardDuck
-from WildTurkey import WildTurkey
-from DuckAdapter import DuckAdapter
+from adapter.turkeys.Turkey import Turkey
+from adapter.ducks.MallardDuck import MallardDuck
+from adapter.turkeys.WildTurkey import WildTurkey
+from adapter.adapters.DuckAdapter import DuckAdapter
 
 
 def test_turkey(turkey: Turkey):

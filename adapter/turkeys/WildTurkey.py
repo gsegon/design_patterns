@@ -1,4 +1,4 @@
-from Turkey import Turkey
+from adapter.turkeys.Turkey import Turkey
 
 
 class WildTurkey(Turkey):

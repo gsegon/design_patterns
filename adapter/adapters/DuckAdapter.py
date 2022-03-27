@@ -1,5 +1,5 @@
-from Turkey import Turkey
-from Duck import Duck
+from adapter.turkeys.Turkey import Turkey
+from adapter.ducks.Duck import Duck
 
 
 class DuckAdapter(Turkey):

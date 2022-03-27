@@ -1,4 +1,4 @@
-from Duck import Duck
+from adapter.ducks.Duck import Duck
 
 
 class MallardDuck(Duck):
