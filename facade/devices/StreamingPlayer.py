@@ -1,10 +1,10 @@
-from facade.devices.Amplifier import Amplifier
+# from facade.devices.Amplifier import Amplifier
 
 
 class StreamingPlayer:
     """ StreamingPlayer device class """
 
-    def __init__(self, amplifier: Amplifier):
+    def __init__(self, amplifier):
         self.amplifier = amplifier
 
     def on(self):
@@ -19,9 +19,9 @@ class StreamingPlayer:
         """ Pause the streaming player """
         print('Streaming player is PAUSED')
 
-    def play(self):
+    def play(self, movie: str):
         """ Play the streaming player """
-        print('Streaming player is PLAYING')
+        print('Streaming player is PLAYING: ', movie)
 
     def set_surround_audio(self):
         """ Set surround audio """

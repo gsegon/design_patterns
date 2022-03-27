@@ -22,7 +22,6 @@ class Amplifier:
     def set_streaming_player(self, streaming_player: StreamingPlayer):
         """ Sets the streaming player """
         self.streaming_player = streaming_player
-        print("Set the streaming player")
 
     def set_stereo_sound(self):
         """ set stereo sound """

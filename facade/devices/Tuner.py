@@ -1,10 +1,10 @@
-from facade.devices.Amplifier import Amplifier
+# from facade.devices.Amplifier import Amplifier
 
 
 class Tuner:
     """ Tuner device class """
 
-    def __init__(self, amplifier: Amplifier):
+    def __init__(self, amplifier):
         self.amplifier = amplifier
         self.frequency = 101.5      # MHz
 
