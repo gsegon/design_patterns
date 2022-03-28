@@ -16,7 +16,7 @@ class TestDuckTestDrive(unittest.TestCase):
 
     # TODO: Make 'multi-dataset' testing
     def setUp(self) -> None:
-        """ Setup ducks to test """
+        """ Setup sort to test """
         self.wild_turkey = WildTurkey()
         mallard_duck = MallardDuck()
         self.duck_adapter = DuckAdapter(mallard_duck)

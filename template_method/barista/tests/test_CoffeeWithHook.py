@@ -1,5 +1,5 @@
 from unittest import TestCase
-from template_method.CoffeeWithHook import CoffeeWithHook
+from template_method.barista.CoffeeWithHook import CoffeeWithHook
 
 
 class TestCoffeeWithHook(TestCase):

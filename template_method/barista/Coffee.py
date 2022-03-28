@@ -1,4 +1,4 @@
-from template_method.CaffeineBeverage import CaffeineBeverage
+from template_method.barista.CaffeineBeverage import CaffeineBeverage
 
 
 class Coffee(CaffeineBeverage):

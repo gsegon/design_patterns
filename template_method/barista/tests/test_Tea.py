@@ -1,5 +1,5 @@
 from unittest import TestCase
-from template_method.Tea import Tea
+from template_method.barista.Tea import Tea
 
 
 class TestTea(TestCase):

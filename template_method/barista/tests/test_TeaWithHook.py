@@ -1,5 +1,5 @@
 from unittest import TestCase
-from template_method.TeaWithHook import TeaWithHook
+from template_method.barista.TeaWithHook import TeaWithHook
 
 
 class TestTeaWithHook(TestCase):

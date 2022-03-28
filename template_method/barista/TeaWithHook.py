@@ -1,4 +1,4 @@
-from template_method.CaffeineBeverageWithHook import CaffeineBeverageWithHook
+from template_method.barista.CaffeineBeverageWithHook import CaffeineBeverageWithHook
 
 
 class TeaWithHook(CaffeineBeverageWithHook):
