@@ -2,15 +2,12 @@ from template_method.CaffeineBeverage import CaffeineBeverage
 
 
 class Tea(CaffeineBeverage):
+    """ Tea inherits from CaffeineBeverage """
 
-    def prepare_recipe(self):
-        self.boil_water()
-        self.steep_tea_bag()
-        self.pour_in_cup()
-        self.add_lemon()
-
-    def steep_tea_bag(self):
+    def brew(self):
+        """ Brew the Tea """
         print('Steeping the Tea')
 
-    def add_lemon(self):
+    def add_condiments(self):
+        """ Add Condiments """
         print('Adding Lemon')

@@ -2,15 +2,12 @@ from template_method.CaffeineBeverage import CaffeineBeverage
 
 
 class Coffee(CaffeineBeverage):
+    """Coffee - inherits from CaffeineBeverage """
 
-    def prepare_recipe(self):
-        self.boil_water()
-        self.brew_coffee_grinds()
-        self.pour_in_cup()
-        self.add_sugar_and_milk()
-
-    def brew_coffee_grinds(self):
+    def brew(self):
+        """ Brew the Coffee """
         print('Dripping coffee through filter')
 
-    def add_sugar_and_milk(self):
+    def add_condiments(self):
+        """ Add condiments """
         print('Adding sugar and milk')
