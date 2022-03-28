@@ -8,7 +8,7 @@ Patterns to cover:
 - [X] Singleton 
 - [X] Command 
 - [X] Adapter and Facade
-- [ ] Template Method
+- [X] Template Method
 - [ ] Iterator and Composite
 - [ ] State
 - [ ] Proxy
