@@ -7,7 +7,7 @@ class TestPancakeHouseMenu(TestCase):
     def setUp(self) -> None:
         self.menu = PancakeHouseMenu()
 
-    def test_get_menu_items(self):
+    def test_iterate(self):
         menu_iterator = self.menu.create_iterator()
 
         while menu_iterator.has_next():
