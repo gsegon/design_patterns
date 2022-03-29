@@ -1,5 +1,7 @@
 from iterator.menus.DinerMenu import DinerMenu
 from iterator.menus.PancakeHouseMenu import PancakeHouseMenu
+from iterator.menus.PythonicPancakeHouseMenu import PythonicPancakeHouseMenu
+from iterator.menus.PythonicDinerMenu import PythonicDinerMenu
 from iterator.iterators import Iterator
 
 
@@ -15,12 +17,21 @@ class Waitress:
         """ Print the entire menu """
         pancake_iterator = self.pancake_house_menu.create_iterator()
         diner_iterator = self.diner_menu.create_iterator()
+        pythonic_pancake_iterator = self.pancake_house_menu.create_iterator()
+        pythonic_diner_iterator = self.diner_menu.create_iterator()
 
         print("MENU\n-----")
         print("BREAKFAST")
         self.print_menu_iterator(pancake_iterator)
         print("\nLUNCH")
         self.print_menu_iterator(diner_iterator)
+
+        print('\n\n')
+        print("MENU (Pythonic)\n-----")
+        print("BREAKFAST")
+        self.print_menu_iterator(pythonic_pancake_iterator)
+        print("\nLUNCH")
+        self.print_menu_iterator(pythonic_diner_iterator)
 
     @staticmethod
     def print_menu_iterator(iterator: Iterator):
