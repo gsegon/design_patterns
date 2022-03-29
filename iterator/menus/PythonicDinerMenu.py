@@ -45,4 +45,4 @@ class PythonicDinerMenu(Menu):
     def create_iterator(self) -> iter:
         """ Create a DinerMenu Iterator """
 
-        return np.nditer(self.menu_items[:np.count_nonzero(self.menu_items.data)], flags=['refs_ok'])
+        return self.menu_items[:np.count_nonzero(self.menu_items.data)].__iter__()
