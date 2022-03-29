@@ -1,9 +1,12 @@
-from iterator.MenuItem import MenuItem
+from iterator.menus.MenuItem import MenuItem
+from iterator.iterators.PancakeHouseMenuIterator import PancakeHouseMenuIterator
 
 
 class PancakeHouseMenu:
+    """ Implements a PancakeHouse Menu - A menu using 'list' as a MenuItem collection """
 
     def __init__(self):
+        """ Initialize the MenuItem collection """
         self.menu_items = []
         self.add_item("K&B\'s Pancake Breakfast",
                       "Pancakes with scrambled eggs and toast",
@@ -26,8 +29,10 @@ class PancakeHouseMenu:
                       3.59)
 
     def add_item(self, name: str, description: str, vegetarian: bool, price: float):
+        """ Add item to the collection """
         menu_item = MenuItem(name, description, vegetarian, price)
         self.menu_items.append(menu_item)
 
-    def get_menu_items(self) -> list:
-        return self.menu_items
+    def create_iterator(self) -> PancakeHouseMenuIterator:
+        """ Create a DinerMenu Iterator """
+        return PancakeHouseMenuIterator(self.menu_items)

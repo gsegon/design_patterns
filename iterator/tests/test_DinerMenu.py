@@ -1,5 +1,5 @@
 from unittest import TestCase
-from iterator.DinerMenu import DinerMenu
+from iterator.menus.DinerMenu import DinerMenu
 
 
 class TestDinerMenu(TestCase):
@@ -8,5 +8,8 @@ class TestDinerMenu(TestCase):
         self.menu = DinerMenu()
 
     def test_get_menu_items(self):
-        items = self.menu.get_menu_items()
-        print(items)
+        menu_iterator = self.menu.create_iterator()
+
+        while menu_iterator.has_next():
+            item = menu_iterator.next()
+            print('item: ', item)

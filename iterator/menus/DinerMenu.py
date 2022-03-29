@@ -1,10 +1,13 @@
 import numpy as np
-from iterator.MenuItem import MenuItem
+from iterator.menus.MenuItem import MenuItem
+from iterator.iterators.DinerMenuIterator import DinerMenuIterator
 
 
 class DinerMenu:
+    """ Implements a Diner Menu - A menu using 'numpy.ndarray' as a MenuItem collection """
 
     def __init__(self):
+        """ Initialize the MenuItem collection """
         self.MAX_ITEMS = 6
         self.num_of_items = 0
         self.menu_items = np.empty(shape=(self.MAX_ITEMS,), dtype=MenuItem)
@@ -30,6 +33,7 @@ class DinerMenu:
                       3.05)
 
     def add_item(self, name: str, description: str, vegetarian: bool, price: float):
+        """ Add item to the collection """
         menu_item = MenuItem(name, description, vegetarian, price)
         if self.num_of_items >= self.MAX_ITEMS:
             raise Exception("Sorry, menu is full! Can't add item to menu")
@@ -37,6 +41,6 @@ class DinerMenu:
             self.menu_items[self.num_of_items] = menu_item
             self.num_of_items += 1
 
-    def get_menu_items(self) -> np.ndarray:
-        return self.menu_items
-
+    def create_iterator(self) -> DinerMenuIterator:
+        """ Create a DinerMenu Iterator """
+        return DinerMenuIterator(self.menu_items)
