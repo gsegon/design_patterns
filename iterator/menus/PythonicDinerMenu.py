@@ -1,7 +1,6 @@
 import numpy as np
 from iterator.menus.Menu import Menu
 from iterator.menus.MenuItem import MenuItem
-# from iterator.iterators.DinerMenuIterator import DinerMenuIterator
 
 
 class PythonicDinerMenu(Menu):
