@@ -9,7 +9,7 @@ Patterns to cover:
 - [X] Command 
 - [X] Adapter and Facade
 - [X] Template Method
-- [ ] Iterator and Composite
+- [X] Iterator and Composite
 - [ ] State
 - [ ] Proxy
 - [ ] Compound
