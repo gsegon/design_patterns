@@ -10,6 +10,6 @@ Patterns to cover:
 - [X] Adapter and Facade
 - [X] Template Method
 - [X] Iterator and Composite
-- [ ] State
+- [X] State
 - [ ] Proxy
 - [ ] Compound
