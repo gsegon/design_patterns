@@ -11,13 +11,14 @@ class GumballMonitor:
     MyRemote on the retrieved object
     """
 
-    def __init__(self):
-        self.machine = self.get_proxy()
+    def __init__(self, location):
+        """ Initialize the monitor """
+        self.machine = self.get_proxy(location)
 
-    def get_proxy(self) -> GumballMachineRemote:
+    def get_proxy(self, location: str) -> GumballMachineRemote:
         """ Get the Proxy (aka. stub or service) from the nameserver.  """
         ns = Pyro4.locateNS()
-        uri = ns.lookup("GumballMachine")
+        uri = ns.lookup(location)
         return Pyro4.Proxy(uri)
 
     def report(self):

@@ -14,9 +14,13 @@ if __name__ == '__main__':
     """
     daemon = Pyro4.Daemon()             # Make a Pyro daemon
     ns = Pyro4.locateNS()               # Find the name server
-    uri = daemon.register(GumballMachineImpl("Linz 4020", 100), objectId='1')   # Register the class. It is only known
-                                                                                # to the daemon, not to nameserver also.
-                                                                                # Returns the uri of the registered
-                                                                                # object.
-    ns.register('GumballMachine', uri)     # Register the object with a nme in the name server.
-    daemon.requestLoop()                # Start the event loop of the server to wait for calls
+
+    # Register the object.It is only known to the daemon, not to nameserver also. Returns the  uri of the registered
+    # object.
+    uri_salzburg = daemon.register(GumballMachineImpl("Salzburg 5020", 89), objectId='2')
+
+    # Register the object with a nme in the name server.
+    ns.register('GumballMachineSalzburg', uri_salzburg)
+
+    # Start the event loop of the server to wait for calls
+    daemon.requestLoop()
